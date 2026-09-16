@@ -1,0 +1,21 @@
+# Anthropic's official Python SDK -- used to talk to Claude, including
+# the tool-use (function calling) features that power the agent loop.
+anthropic>=0.40.0
+
+# Free, no-API-key-needed web search used by the web_search tool.
+duckduckgo-search>=6.0.0
+
+# HTTP client used by the fetch_page tool to download webpages.
+requests>=2.31.0
+
+# HTML parser used by the fetch_page tool to extract readable text
+# from downloaded webpages.
+beautifulsoup4>=4.12.0
+
+# Pretty terminal output (colors, panels, spinners, Markdown rendering)
+# used throughout main.py.
+rich>=13.7.0
+
+# Loads the ANTHROPIC_API_KEY from a local .env file so it never has to be
+# typed into the terminal or hard-coded into source files.
+python-dotenv>=1.0.0
